@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poppy Balloons</title>
+  <style>
+    :root {
+      --pink: #f97ba5;
+      --light-pink: #ffd9e6;
+      --lavender: #aa7bcc;
+      --light-lavender: #f7d0ff;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background-color: var(--light-pink);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      color: var(--pink);
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    nav {
+      background-color: var(--light-lavender);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--lavender);
+      font-weight: bold;
+    }
+    nav a:hover { color: var(--pink); }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .service-card {
+      border-radius: 12px;
+      padding: 1.5rem;
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    footer {
+      background-color: var(--light-pink);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Poppy Balloons</h1>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+  </nav>
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card" style="background-image: url('images/garland.jpg');">
+        <h3>🎈 Balloon Garlands</h3>
+        <p>Starting at $125</p>
+      </div>
+      <div class="service-card" style="background-image: url('images/arch.jpg');">
+        <h3>🎉 Balloon Arches</h3>
+        <p>Starting at $200</p>
+      </div>
+      <div class="service-card" style="background-image: url('images/grabgo.jpg');">
+        <h3>📦 Grab & Go Garlands</h3>
+        <p>Starting at $75</p>
+      </div>
+      <div class="service-card" style="background-image: url('images/theme.jpg');">
+        <h3>🛍️ Custom Themes</h3>
+        <p>Fully tailored setups</p>
+      </div>
+      <div class="service-card" style="background-image: url('images/addons.jpg');">
+        <h3>✨ Add-Ons</h3>
+        <p>Foils, fringe, florals & more</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Poppy Balloons – Cheyenne, Wyoming
+  </footer>
+</body>
+</html>
